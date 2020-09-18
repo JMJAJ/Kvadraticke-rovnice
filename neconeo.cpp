@@ -1,4 +1,4 @@
-﻿//#include "pch.h"
+﻿#include "pch.h"
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -62,7 +62,7 @@ void rce()
 	switch (choice)
 	{
 	case 1:
-		znam1 = 1;
+		znam1 = +1;
 		break;
 
 	case 2:
@@ -77,7 +77,7 @@ void rce()
 	switch (choice)
 	{
 	case 1:
-		znam2 = 1;
+		znam2 = +1;
 		break;
 
 	case 2:
@@ -92,7 +92,7 @@ void rce()
 	switch (choice)
 	{
 	case 1:
-		znam3 = 1;
+		znam3 = +1;
 		break;
 
 	case 2:
@@ -131,7 +131,7 @@ void res()
 		cout << "\nK = {" << resA << ", " << resB << "}";
 	}
 
-	if (D = 0)
+	if (D == 0)
 	{
 		resA = ((-b) / (2 * a));
 		cout << "Vysledek je, ze x je" << resA <<endl;
