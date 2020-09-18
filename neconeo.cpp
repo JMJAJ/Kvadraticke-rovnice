@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿//#include "pch.h"
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -130,6 +130,17 @@ void res()
 			<< "x2 = " << resB << endl;
 		cout << "\nK = {" << resA << ", " << resB << "}";
 	}
+	else if (D < 0)
+	{
+		system("cls");
+		cout << "x neexistuje" << endl;
+		cout << "Vysledek je, ze x neexistuje\n\n";
+		cout << "K = {}";
+	}
+	else
+	{
+
+	}
 
 	if (D == 0)
 	{
@@ -137,12 +148,16 @@ void res()
 		cout << "Vysledek je, ze x je" << resA <<endl;
 		cout << "\nK = {" << resA << "}";
 	}
-
-	if (D < 0)
+	else if (D < 0)
 	{
+		system("cls");
 		cout << "x neexistuje" << endl;
 		cout << "Vysledek je, ze x neexistuje\n\n";
 		cout << "K = {}";
+	}
+	else
+	{
+
 	}
 
 
